@@ -106,4 +106,12 @@ public class Animal {
     public void setPorte(String porte) {
         this.porte = porte;
     }
+
+    public String getNomeRecebedor() {
+        return nomeRecebedor;
+    }
+
+    public void setNomeRecebedor(String nomeRecebedor) {
+        this.nomeRecebedor = nomeRecebedor;
+    }
 }

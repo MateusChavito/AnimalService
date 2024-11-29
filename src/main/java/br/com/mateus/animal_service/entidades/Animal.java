@@ -43,6 +43,17 @@ public class Animal {
     @Column(nullable = false)
     private String porte;
 
+    @Column(nullable = false)
+    private String tipo;
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
     public String getNomeProvisorio() {
         return nomeProvisorio;
     }

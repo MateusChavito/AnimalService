@@ -25,14 +25,13 @@ public class AnimalController {
         return repository.save(animal);
     }
 
-    @GetMapping("/not-adopted")
-    private List<Animal> findNotAdopted(){
-        return repository.findNotAdopted();
+    @GetMapping("/not-adopted/{tipo}")
+    private List<Animal> findNotAdoptedByTipo(@PathVariable String tipo) {
+        return repository.findNotAdoptedByTipo(tipo);
     }
 
-    @GetMapping("/adopted")
-    private List<Animal> findAdopted(){
-        return repository.findAdopted();
+    @GetMapping("/adopted/{tipo}")
+    private List<Animal> findAdoptedByTipo(@PathVariable String tipo) {
+        return repository.findAdoptedByTipo(tipo);
     }
-
 }

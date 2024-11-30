@@ -39,6 +39,7 @@ O projeto utiliza o banco de dados H2 em memória. Para acessar o console H2:
    - `POST /animais`: Adiciona um novo animal (enviar JSON no corpo da requisição).
    - `GET /animais/not-adopted/Cachorro OU Gato`: Lista animais não adotados.
    - `GET /animais/adopted/Cachorro OU Gato`: Lista animais adotados.
+   - (Modificar o final para Cachorro ou Gato para aplicar a filtragem, ex: GET /animais/adopted/Cachorro ou GET /animais/adopted/Gato
 
 ### Exemplo de JSON para Cadastro
 
